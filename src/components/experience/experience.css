@@ -1,0 +1,40 @@
+.experience__details {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.container-experience__container{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-evenly;
+}
+
+.experience__details h4 {
+    margin-left: 0.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .experience__content {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
