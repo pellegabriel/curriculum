@@ -36,6 +36,12 @@
   margin-bottom: 1rem;
 }
 
+.portfolio__item-image {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
 /* .btn:hover {
     background: var(--color-bg);
     color: var(--color-primary);
