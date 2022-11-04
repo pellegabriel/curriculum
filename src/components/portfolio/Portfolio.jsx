@@ -30,16 +30,6 @@ const Portfolio = () => {
                 </article>
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src="./assets/IMG1.png" alt=""/>
-                    </div>
-                    <h3>Map YPF Points</h3>
-                    <div className="portfolio__item-cta">
-                        <a href="https://mapappoint.netlify.app" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">Page</a>          
-                        <a href="https://github.com/pellegabriel/mapa" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">GitHub</a>
-                    </div>
-                </article>
-                <article className="portfolio__item">
-                    <div className="portfolio__item-image">
                         <img src="./assets/IMG3.png" alt=""/>
                     </div>
                     <h3>Movie Search</h3>
@@ -57,6 +47,16 @@ const Portfolio = () => {
                     <div className="portfolio__item-cta">
                         <a href="https://rymorty.netlify.app" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">Page</a>      
                         <a href="https://github.com/pellegabriel/my-app2" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
+                <article className="portfolio__item">
+                    <div className="portfolio__item-image">
+                        <img src="./assets/IMG1.png" alt=""/>
+                    </div>
+                    <h3>Map YPF Points</h3>
+                    <div className="portfolio__item-cta">
+                        <a href="https://mapappoint.netlify.app" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">Page</a>          
+                        <a href="https://github.com/pellegabriel/mapa" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">GitHub</a>
                     </div>
                 </article>
             </div>
