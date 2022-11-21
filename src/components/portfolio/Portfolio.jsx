@@ -10,7 +10,7 @@ const Portfolio = () => {
             <div className="container portfolio__container">
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                    <iframe src="https://criptapi.netlify.app/" width="900" height="700" allow="fullscreen">Cripto-Api</iframe>
+                    <iframe src="https://criptapi.netlify.app/" width="900" height="700" allow="fullscreen" title="Cripto-Api"></iframe>
                     </div>
                     <h3>Cripto-Api</h3>
                     <div className="portfolio__item-cta">
@@ -20,7 +20,7 @@ const Portfolio = () => {
                 </article>
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                    <iframe src="https://tasksli.netlify.app/" width="900" height="700" allow="fullscreen">TasksList</iframe>
+                    <iframe src="https://tasksli.netlify.app/" width="900" height="700" allow="fullscreen" title="TasksList"></iframe>
                     </div>
                     <h3>TasksList</h3>
                     <div className="portfolio__item-cta">
@@ -29,7 +29,7 @@ const Portfolio = () => {
                 </article>
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                    <iframe src="https://enciclopoke.netlify.app/" width="900" height="700" allow="fullscreen">PokeDex</iframe>
+                    <iframe src="https://enciclopoke.netlify.app/" width="900" height="700" allow="fullscreen" title="PokeDex"></iframe>
                     </div>
                     <h3>PokeDex</h3>
                     <div className="portfolio__item-cta">
@@ -39,7 +39,7 @@ const Portfolio = () => {
                 </article>
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                    <iframe src="https://mapappoint.netlify.app" width="900" height="700" allow="fullscreen">Mapa</iframe>
+                    <iframe src="https://mapappoint.netlify.app" width="900" height="700" allow="fullscreen" title="Mapa"></iframe>
                     </div>
                     <h3>Map YPF Points</h3>
                     <div className="portfolio__item-cta">
@@ -49,7 +49,7 @@ const Portfolio = () => {
                 </article>
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                    <iframe src="https://buskdor.netlify.app/" width="900" height="700" allow="fullscreen">Movie Search</iframe>
+                    <iframe src="https://buskdor.netlify.app/" width="900" height="700" allow="fullscreen" title="Movie Search"></iframe>
                     </div>
                     <h3>Movie Search</h3>
                     <div className="portfolio__item-cta"> 
@@ -60,7 +60,7 @@ const Portfolio = () => {
 
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                    <iframe src="https://rymorty.netlify.app/" width="900" height="700" allow="fullscreen">Rick and Morty's</iframe>
+                    <iframe src="https://rymorty.netlify.app/" width="900" height="700" allow="fullscreen" title="Rick and Morty's"></iframe>
                     </div>
                     <h3>Rick and Morty's</h3>
                     <div className="portfolio__item-cta">
