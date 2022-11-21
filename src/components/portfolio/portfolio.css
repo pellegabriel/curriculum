@@ -17,14 +17,14 @@
 
 .portfolio__item:hover {
   border-color: var(--color-primary-variant);
-  background: transparent;
 }
 
 .portfolio__item-image {
     overflow: hidden;
-    border-radius: 30px;
 }
-
+iframe{
+  border-radius: 30px;
+}
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
 }
