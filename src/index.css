@@ -112,3 +112,7 @@ img {
     margin-bottom: 2rem;
   }
 }
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}

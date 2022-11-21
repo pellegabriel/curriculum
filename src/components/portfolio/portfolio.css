@@ -24,6 +24,7 @@
 }
 iframe{
   border-radius: 30px;
+  scroll-behavior: smooth;
 }
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;

@@ -8,11 +8,16 @@ import Header from "./components/header/Header.jsx";
 import Nav from "./components/nav/Nav.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
 
+
+
+
 class App extends Component {
+  
   render() {
+    
     return (
       <div>
-        <Header />
+        <Header/>
         <About />
         <Experience />
         <Portfolio />
