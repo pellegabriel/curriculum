@@ -10,7 +10,7 @@ const Portfolio = () => {
             <div className="container portfolio__container">
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src="./assets/IMG5.png" alt=""/>
+                    <iframe src="https://criptapi.netlify.app/" width="900" height="700" allow="fullscreen">Cripto-Api</iframe>
                     </div>
                     <h3>Cripto-Api</h3>
                     <div className="portfolio__item-cta">
@@ -20,7 +20,16 @@ const Portfolio = () => {
                 </article>
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src="./assets/IMG4.png" alt=""/>
+                    <iframe src="https://tasksli.netlify.app/" width="900" height="700" allow="fullscreen">TasksList</iframe>
+                    </div>
+                    <h3>TasksList</h3>
+                    <div className="portfolio__item-cta">
+                        <a href="https://tasksli.netlify.app/" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">Page</a>          
+                    </div>
+                </article>
+                <article className="portfolio__item">
+                    <div className="portfolio__item-image">
+                    <iframe src="https://enciclopoke.netlify.app/" width="900" height="700" allow="fullscreen">PokeDex</iframe>
                     </div>
                     <h3>PokeDex</h3>
                     <div className="portfolio__item-cta">
@@ -30,7 +39,17 @@ const Portfolio = () => {
                 </article>
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src="./assets/IMG3.png" alt=""/>
+                    <iframe src="https://mapappoint.netlify.app" width="900" height="700" allow="fullscreen">Mapa</iframe>
+                    </div>
+                    <h3>Map YPF Points</h3>
+                    <div className="portfolio__item-cta">
+                        <a href="https://mapappoint.netlify.app" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">Page</a>          
+                        <a href="https://github.com/pellegabriel/mapa" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
+                <article className="portfolio__item">
+                    <div className="portfolio__item-image">
+                    <iframe src="https://buskdor.netlify.app/" width="900" height="700" allow="fullscreen">Movie Search</iframe>
                     </div>
                     <h3>Movie Search</h3>
                     <div className="portfolio__item-cta"> 
@@ -41,7 +60,7 @@ const Portfolio = () => {
 
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src="./assets/IMG2.png" alt=""/>
+                    <iframe src="https://rymorty.netlify.app/" width="900" height="700" allow="fullscreen">Rick and Morty's</iframe>
                     </div>
                     <h3>Rick and Morty's</h3>
                     <div className="portfolio__item-cta">
@@ -49,16 +68,7 @@ const Portfolio = () => {
                         <a href="https://github.com/pellegabriel/my-app2" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">GitHub</a>
                     </div>
                 </article>
-                <article className="portfolio__item">
-                    <div className="portfolio__item-image">
-                        <img src="./assets/IMG1.png" alt=""/>
-                    </div>
-                    <h3>Map YPF Points</h3>
-                    <div className="portfolio__item-cta">
-                        <a href="https://mapappoint.netlify.app" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">Page</a>          
-                        <a href="https://github.com/pellegabriel/mapa" className="nes-btn is-primary" target='_blank' rel="noopener noreferrer">GitHub</a>
-                    </div>
-                </article>
+
             </div>
         </section>
     ) 
