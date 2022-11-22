@@ -8,10 +8,6 @@ const About = () => {
             <h5>Get To Know</h5>
             <h2>About Me</h2>
         <div className="container about__container">
-            <div className="about__me">
-                <img className="about__me-image" src="./assets/perfil2.png" alt="" />
-            </div>
-
             <div className="about__content">
                 <p>
                 Hello my Name Is Gabriel. I come from the land called Argentina, more specifically from Santa Cruz / Río Gallegos.

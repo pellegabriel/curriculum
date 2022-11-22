@@ -95,7 +95,7 @@ img {
   object-fit: cover;
   width: 80%;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:1024px) {
   .container{
     width: var(--container-width-md);
   }
@@ -104,14 +104,16 @@ img {
   }
 }
 
-@media screen and (max-width:400px) {
-  .container{
-    width: var(--container-width-sm);
-  } 
-  section > h2 {
-    margin-bottom: 2rem;
+@media screen and (max-width: 600px){
+  .contenedor{
+    height: 100%;
+      width: 100%;;
+  }
+  section > h2{
+      margin-bottom: ;
   }
 }
+
 html{
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;

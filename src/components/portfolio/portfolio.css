@@ -63,4 +63,6 @@ iframe{
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  iframe{height: 100%;
+  width: 100%;}
 }
