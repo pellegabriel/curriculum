@@ -44,11 +44,7 @@ iframe{
   margin: 5px;
 }
 
-/* .btn:hover {
-    background: var(--color-bg);
-    color: var(--color-primary);
 
-} */
 /* media queries (medium devices) */
 @media screen and (max-width: 1024px) {
   .portfolio__container {
