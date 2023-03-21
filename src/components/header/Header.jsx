@@ -3,10 +3,11 @@ import './header.css'
 import CTA from './CTA'
 import HeaderSocials from "./HeaderSocials";
 import Img from "../img/img"
+import '../../App.css'
 
 const Header = () => {
     return (
-        <header>
+        <header className="crt">
         <div className=".container header__container">
             <h5>Hello i am</h5>
             <h1>Pelle Gabriel</h1>
