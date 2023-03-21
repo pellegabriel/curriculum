@@ -22,12 +22,13 @@
 .portfolio__item-image {
     overflow: hidden;
 }
-iframe{
+iframe {
   border-radius: 30px;
   scroll-behavior: smooth;
+  transform: scale(0.7); /* add this line to zoom out the iframe */
 }
 .portfolio__item h3 {
-  margin: 1.2rem 0 2rem;
+
 }
 
 .portfolio__item-cta {
@@ -39,11 +40,10 @@ iframe{
 }
 
 .portfolio__item-image {
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  margin: 5px;
 }
-
 
 /* media queries (medium devices) */
 @media screen and (max-width: 1024px) {
@@ -53,12 +53,14 @@ iframe{
   }
 }
 
-/* media queries (small devices) */
 @media screen and (max-width: 600px) {
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  iframe{height: 100%;
-  width: 100%;}
+  iframe {
+    height: 100%;
+    width: 100%;
+    transform: scale(0.7); /* add this line to zoom out the iframe */
+  }
 }
