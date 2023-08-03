@@ -133,13 +133,29 @@ text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
   .contenedor{
     height: 100%;
       width: 100%;;
+      
+  }
+  header{
+    padding: 50px;
+    padding-bottom: 0px;
+    padding-top: 0px
   }
   section > h2{
       margin-bottom: 2rem;
+      font-size: x-large;
+      margin-left: 120px;
+  }
+  section {
+    margin-top: 0rem;
+    padding: 0rem;
+  }
+  body {
+    width: 393px;
   }
 }
 
 html{
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  
 }

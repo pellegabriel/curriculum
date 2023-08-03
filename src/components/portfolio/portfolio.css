@@ -52,15 +52,27 @@ iframe {
 @media screen and (max-width: 1024px) {
   .portfolio__item {
     width: 50%;
+
   }
 }
 
 
 @media screen and (max-width: 600px) {
   .portfolio__item {
-    width: 100%;
+    width: 80%;
+    height: 600px;
+
+  }
+  .portfolio__item-image {
+    height: 450px;
   }
   iframe {
-    transform: scale(1);
+    transform: scale(0.9);
+  }
+  #portfolio {
+    
+    padding: 30px;
+    padding-bottom: 100px;
+    padding-top: 0px;
   }
 }
