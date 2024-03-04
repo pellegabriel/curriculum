@@ -10,6 +10,20 @@
   list-style: none;
   text-decoration: none;
 }
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+      overflow-y: auto; /* Permite el desplazamiento vertical */
+background-color: #010314;
+
+}
+.box {
+  position: absolute;
+  background: #000;
+  background-attachment: fixed;
+}
 :root {
   --color-bg: #070417;
   --color-bg-variant: #383cbb;

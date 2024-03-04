@@ -7,16 +7,39 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
-    />
+      content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet" />
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
     <title>Gabriel Pelle</title>
   </head>
   <body>
-    <noscript>...</noscript>
-    <div id="root" class="crt" asscroll-container></div>
+    <div id="container">
+      
+    <div id="root" class="crt" asscroll-container>
+          <script type="text/javascript">
+      let bg = document.getElementById("container");
+      let count = 20;
+      for (let i = 0; i < count; i++) {
+        let glitchBox = document.createElement("div");
+        glitchBox.className = "box";
+        bg.appendChild(glitchBox);
+      }
+      setInterval(function () {
+        let glitch = document.getElementsByClassName("box");
+        for (let i = 0; i < glitch.length; i++) {
+          glitch[i].style.left = Math.floor(Math.random() * 100) + "vw";
+          glitch[i].style.top = Math.floor(Math.random() * 600) + "vh";
+          glitch[i].style.width = Math.floor(Math.random() * 600) + "px";
+          glitch[i].style.height = Math.floor(Math.random() * 100) + "px";
+          glitch[i].style.backgroundPosition = Math.floor(Math.random() * 50) + "px";
+        }
+      }, 200);
+    </script>
+    </div>
+  </div>
   </body>
 </html>
