@@ -21,11 +21,11 @@ background-color: #010314;
 }
 .box {
   position: absolute;
-  background: #000;
+  background: #04000d;
   background-attachment: fixed;
 }
 :root {
-  --color-bg: #070417;
+  --color-bg: #03010f;
   --color-bg-variant: #383cbb;
   --color-primary: #4d6eff;
   --color-primary-variant: rgb(255, 255, 255);
