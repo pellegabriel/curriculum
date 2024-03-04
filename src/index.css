@@ -10,13 +10,13 @@
   list-style: none;
   text-decoration: none;
 }
-:root{
-  --color-bg: #201f38;
+:root {
+  --color-bg: #070417;
   --color-bg-variant: #383cbb;
-  --color-primary:#4d6eff;
+  --color-primary: #4d6eff;
   --color-primary-variant: rgb(255, 255, 255);
-  --color-white: rgb(255, 255, 255) ;
-  --color-light: rgba(255, 255, 255, 0.6) ;
+  --color-white: rgb(255, 255, 255);
+  --color-light: rgba(255, 255, 255, 0.6);
 
   --transition: all 400ms ease;
 
@@ -95,8 +95,8 @@ img {
   object-fit: cover;
   width: 80%;
 }
-html { background: #111;
-  padding: 1em;
+html {
+  background: #111;
   font-family: Nintendoid1;
   color: #eee;
   font-size: 1em;
@@ -108,20 +108,26 @@ html { background: #111;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-h1 { font-size: 3em; }
-h2 { font-size: 4em; }
-h5 { font-size: 1.2em; }
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 4em;
+}
+h5 {
+  font-size: 1.2em;
+}
 
 @keyframes textflicker {
-from {
-text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
 }
-to {
-text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
-}
-}
-@media screen and (max-width:1024px) {
-  .container{
+@media screen and (max-width: 1024px) {
+  .container {
     width: var(--container-width-md);
   }
   section {
@@ -129,21 +135,20 @@ text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
   }
 }
 
-@media screen and (max-width: 600px){
-  .contenedor{
+@media screen and (max-width: 600px) {
+  .contenedor {
     height: 100%;
-      width: 100%;;
-      
+    width: 100%;
   }
-  header{
+  header {
     padding: 50px;
     padding-bottom: 0px;
-    padding-top: 0px
+    padding-top: 0px;
   }
-  section > h2{
-      margin-bottom: 2rem;
-      font-size: x-large;
-      margin-left: 120px;
+  section > h2 {
+    margin-bottom: 2rem;
+    font-size: x-large;
+    margin-left: 120px;
   }
   section {
     margin-top: 0rem;
@@ -154,8 +159,7 @@ text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  
 }
