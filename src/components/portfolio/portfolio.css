@@ -1,79 +1,57 @@
 .portfolio__container {
   display: grid;
-  overflow-x: hidden;
-  gap: 1.5rem;
-  scroll-snap-type: x mandatory;
-  width: 100%;
-  border: 1px solid;
-
-  border-color: var(--color-primary-variant);
-
-  height: 1000px;
+  grid-template-columns: repeat(3, 1fr); /* Por defecto 3 columnas */
+  gap: 20px;
 }
 
 .portfolio__item {
+  background: #a6a6ff;
   padding: 20px;
-  background: var(--color-bg-variant);
-  border: 1px solid transparent;
-  transition: var(--transition);
-  flex: 0 0 auto;
-  width: 100%;
-  scroll-snap-align: start;
-  text-align: center;
-}
-.portfolio__container::-webkit-scrollbar {
-  display: none;
+  line-height: 1.6;
+      border: 4px solid transparent;
+    transition: var(--transition);
+
 }
 
-.portfolio__container {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 .portfolio__item:hover {
+  background: transparent;
   border-color: var(--color-primary-variant);
 }
 
-.portfolio__item-image {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+.label {
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 4px;
 }
 
-iframe {
-  scroll-behavior: smooth;
-  transform: scale(0.7);
-  width: 100%;
-  height: 1000px;
+h3{
+    font-weight: bold;
+
+}
+.content {
+  font-size: 0.9em;
+  display: block;
 }
 
-.portfolio__item-cta {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+ul {
+  padding-left: 0; /* Eliminar el padding predeterminado */
+  list-style-type: none; /* Opcional: eliminar los bullets */
 }
 
-@media screen and (max-width: 1024px) {
-  .portfolio__item {
-    width: 100%;
+ul li {
+  margin-bottom: 4px; /* Espacio uniforme entre ítems de lista */
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* Para tablets y pantallas pequeñas */
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
   }
 }
 
-@media screen and (max-width: 600px) {
-  .portfolio__item {
-    width: 100%;
-    height: 600px;
-  }
-  .portfolio__item-image {
-    height: 450px;
-  }
-  iframe {
-    transform: scale(0.9);
-  }
-  #portfolio {
-    padding: 30px;
-    padding-bottom: 100px;
-    padding-top: 0px;
+@media (max-width: 480px) { /* Para móviles */
+  .portfolio__container {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
   }
 }

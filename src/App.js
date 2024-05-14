@@ -24,7 +24,6 @@ class App extends Component {
         <Portfolio />
         <Contact />
         <Footer />
-        <Nav />
       </div>
     );
   }

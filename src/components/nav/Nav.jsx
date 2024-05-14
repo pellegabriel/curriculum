@@ -8,11 +8,18 @@ import { useState } from "react";
 
 const Nav = () => {
   const [activateNav, setActiveNav] = useState("#");
+  const handleHomeClick = (e) => {
+    e.preventDefault(); // Previene el comportamiento predeterminado del enlace
+    setActiveNav("#");
+    window.scrollTo(0, 0); 
+    console.log('asdasdsa')// Esto mueve la vista al inicio de la página
+  };
+
   return (
     <nav>
       <a
         href="# "
-        onClick={() => setActiveNav("#")}
+        onClick={handleHomeClick}
         className={activateNav === "#" ? "active" : ""}>
         <AiOutlineHome />
       </a>

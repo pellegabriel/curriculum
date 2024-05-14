@@ -15,9 +15,8 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-      overflow-y: auto; /* Permite el desplazamiento vertical */
-background-color: #010314;
-
+  overflow-y: auto; /* Permite el desplazamiento vertical */
+  background-color: #dbdeff;
 }
 .box {
   position: absolute;
@@ -26,11 +25,11 @@ background-color: #010314;
 }
 :root {
   --color-bg: #03010f;
-  --color-bg-variant: #383cbb;
+  --color-bg-variant: #686bcb;
   --color-primary: #4d6eff;
   --color-primary-variant: rgb(255, 255, 255);
-  --color-white: rgb(255, 255, 255);
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-white: rgb(0, 0, 0);
+  --color-light: rgba(0, 0, 0, 0.6);
 
   --transition: all 400ms ease;
 
@@ -68,8 +67,8 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
-  padding: 7rem;
+  margin-top: 4rem;
+  padding: 4rem;
 }
 
 section > h2,
@@ -107,7 +106,7 @@ a:hover {
 img {
   display: flex;
   object-fit: cover;
-  width: 80%;
+  width: 100%;
 }
 html {
   background: #111;
@@ -176,4 +175,10 @@ h5 {
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+}
+.box {
+  position: fixed;
+  background-color: rgba(223, 220, 255, 0.187);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
 }
