@@ -5,7 +5,6 @@ import Contact from "./components/contact/Contact.jsx";
 import Experience from "./components/experience/Experience.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
-import Nav from "./components/nav/Nav.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
 
 
