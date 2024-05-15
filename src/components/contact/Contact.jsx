@@ -4,6 +4,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { FaLinkedin } from "react-icons/fa"
 
 const Contact = () => {
   const form = useRef();
@@ -35,6 +36,17 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
+                  <article className="contact__option">
+            <FaLinkedin className="contact__option-icon" />
+            <h4>LinkedIn</h4>
+            <a
+              className="nes-btn is-primary"
+              href="https://www.linkedin.com/in/gabrielpelle/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Send a message
+            </a>
+          </article>
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Gmail</h4>

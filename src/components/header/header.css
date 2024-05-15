@@ -1,5 +1,5 @@
 header {
-  height: 120vh;
+  height: 110vh;
   padding-top: 2rem;
   overflow: hidden;
 }
@@ -14,7 +14,7 @@ header {
 
 /* cta */
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
