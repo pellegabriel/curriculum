@@ -37,6 +37,7 @@ const experiences = [
 ];
   return (
     <section id="portfolio">
+    <h2>PORTFOLIO</h2>
       <div className="portfolio__container">
         {experiences.map((experience, index) => (
           <div className="portfolio__item" key={index}>

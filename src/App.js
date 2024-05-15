@@ -7,9 +7,6 @@ import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
 
-
-
-
 class App extends Component {
   
   render() {
@@ -17,12 +14,12 @@ class App extends Component {
     return (
       
       <div id='AppConteiner'>
+        <Footer />
         <Header/>
         <About />
         <Experience />
         <Portfolio />
         <Contact />
-        <Footer />
       </div>
     );
   }

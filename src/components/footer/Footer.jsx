@@ -6,11 +6,6 @@ const Footer = () => {
     <section className="footer">
       <ul className="permalinks">
         <li>
-          <a href="# " className="nes-btn is-secondary">
-            Home
-          </a>
-        </li>
-        <li>
           <a href="#about" className="nes-btn is-secondary">
             About
           </a>

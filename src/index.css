@@ -18,6 +18,7 @@
   overflow-y: auto; /* Permite el desplazamiento vertical */
   background-color: #dbdeff;
 }
+
 .box {
   position: absolute;
   background: #04000d;
