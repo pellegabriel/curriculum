@@ -1,4 +1,6 @@
+// src/components/footer/Footer.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
@@ -6,24 +8,29 @@ const Footer = () => {
     <section className="footer">
       <ul className="permalinks">
         <li>
-          <a href="#about" className="nes-btn is-secondary">
+          <Link to="/" className="nes-btn is-secondary">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" className="nes-btn is-secondary">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#experience" className="nes-btn is-secondary">
+          <Link to="/experience" className="nes-btn is-secondary">
             Experience
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#portfolio" className="nes-btn is-secondary">
+          <Link to="/portfolio" className="nes-btn is-secondary">
             Portfolio
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#contact" className="nes-btn is-secondary">
+          <Link to="/contact" className="nes-btn is-secondary">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </section>
