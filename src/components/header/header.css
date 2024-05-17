@@ -68,19 +68,6 @@ img {
   bottom: 3rem;
 }
 
-.scroll__down {
-  position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
-  transform: rotate(90deg);
-  font-weight: 200;
-  font-size: 0.9rem;
-}
-
-.scroll__down:hover {
-  background-color: var(--color-primary);
-  color: var(--color-bg-variant);
-}
  .wrapper {
     display: flex;
     /* align-items: center; */
@@ -147,8 +134,7 @@ img {
   header {
     height: 100vh;
   }
-  .header__socials,
-  .scroll__down {
+  .header__socials{
     display: none;
   }
 }
