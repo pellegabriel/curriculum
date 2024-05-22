@@ -38,7 +38,7 @@ const BackgroundMusic = () => {
             top: "10px",
             left: "30px",
             zIndex: 1000,
-            padding:5
+            padding:5,
           }}>
           <FaMusic /> PLAY 
         </button>

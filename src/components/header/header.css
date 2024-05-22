@@ -22,12 +22,6 @@ img {
   margin: 0 auto;
 }
 
-.cta {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-}
 .me {
   background: rgb(0, 0, 0);
   background: linear-gradient(

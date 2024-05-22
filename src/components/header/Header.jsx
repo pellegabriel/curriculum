@@ -1,6 +1,5 @@
 import React from "react";
 import "./header.css";
-import CTA from "./CTA";
 import Img from "../img/img";
 import "../../App.css";
 
@@ -12,7 +11,6 @@ const Header = () => {
         <h1>Pelle Gabriel</h1>
         <Img />
         <h5 className="text-light">Front-end Developer</h5>
-        <CTA />
         <br />
       </div>
     </header>
