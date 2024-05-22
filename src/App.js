@@ -8,7 +8,6 @@ import Experience from "./components/experience/Experience.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
-import BackgroundMusic from "./components/BackgroundMusic.js";
 
 class App extends Component {
   render() {
