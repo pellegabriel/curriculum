@@ -63,7 +63,7 @@ const Contact = () => {
             <h4>WhatsApp</h4>
             <a
               className="nes-btn is-primary"
-              href="https://api.whatsapp.com/send?phone=+542966305853"
+              href="https://api.whatsapp.com/send?phone=542966305853"
               target="_blank"
               rel="noopener noreferrer">
               Send a message
