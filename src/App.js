@@ -8,24 +8,26 @@ import Experience from "./components/experience/Experience.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
+import BackgroundMusic from "./components/BackgroundMusic.js";
 
 class App extends Component {
   render() {
     return (
-              <div id="AppContainer">
-
-      <Router>
-          <Footer />
-          <Routes>
-            <Route path="/" element={<Header />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-      </Router>
-              </div>
-
+      <>
+        <BackgroundMusic />
+        <div id="AppContainer">
+          <Router>
+            <Footer />
+            <Routes>
+              <Route path="/" element={<Header />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </Router>
+        </div>
+      </>
     );
   }
 }
