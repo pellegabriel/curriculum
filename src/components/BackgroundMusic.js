@@ -1,42 +1,50 @@
-import { useEffect, useRef } from 'react';
+// src/components/BackgroundMusic.js
+import { useState, useEffect, useRef } from "react";
+import { FaMusic } from "react-icons/fa";
 
 const BackgroundMusic = () => {
-  const audioRef = useRef(new Audio('/background-music.mp3'));
+  const audioRef = useRef(new Audio("/background-music.mp3"));
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     const audio = audioRef.current;
     audio.loop = true;
 
-    const playAudio = () => {
-      console.log("Attempting to play audio");
+    if (isPlaying) {
       audio.play().catch((error) => {
-        console.error('Failed to play audio:', error);
+        console.error("Failed to play audio:", error);
       });
-    };
-
-    const handleInteraction = () => {
-      console.log("User interaction detected, attempting to play audio");
-      playAudio();
-      // Remove event listeners once audio starts playing
-      document.removeEventListener('click', handleInteraction);
-      document.removeEventListener('keydown', handleInteraction);
-      document.removeEventListener('mousemove', handleInteraction);
-    };
-
-    document.addEventListener('click', handleInteraction);
-    document.addEventListener('keydown', handleInteraction);
-    document.addEventListener('mousemove', handleInteraction);
+    } else {
+      audio.pause();
+    }
 
     return () => {
-      console.log("Cleaning up event listeners");
       audio.pause();
-      document.removeEventListener('click', handleInteraction);
-      document.removeEventListener('keydown', handleInteraction);
-      document.removeEventListener('mousemove', handleInteraction);
     };
-  }, []);
+  }, [isPlaying]);
 
-  return null;
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
+
+  return (
+    <div>
+      {!isPlaying && (
+        
+        <button
+          onClick={handlePlay}
+          style={{
+            position: "absolute",
+            top: "10px",
+            left: "30px",
+            zIndex: 1000,
+            padding:5
+          }}>
+          <FaMusic /> PLAY 
+        </button>
+      )}
+    </div>
+  );
 };
 
 export default BackgroundMusic;
