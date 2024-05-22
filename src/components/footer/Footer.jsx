@@ -2,11 +2,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
-
+import BackgroundMusic from '../BackgroundMusic'
 const Footer = () => {
   return (
     <section className="footer">
       <ul className="permalinks">
+      
+        <li>
+              <BackgroundMusic />
+
+        </li>
+
         <li>
           <Link to="/" className="nes-btn is-secondary">
             Home

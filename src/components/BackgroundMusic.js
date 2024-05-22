@@ -1,6 +1,5 @@
-// src/components/BackgroundMusic.js
 import { useState, useEffect, useRef } from "react";
-import { FaMusic } from "react-icons/fa";
+import { FaMusic, FaPause } from "react-icons/fa";
 
 const BackgroundMusic = () => {
   const audioRef = useRef(new Audio("/background-music.mp3"));
@@ -23,26 +22,23 @@ const BackgroundMusic = () => {
     };
   }, [isPlaying]);
 
-  const handlePlay = () => {
-    setIsPlaying(true);
+  const togglePlayPause = () => {
+    setIsPlaying((prevState) => !prevState);
   };
 
   return (
     <div>
-      {!isPlaying && (
-        
-        <button
-          onClick={handlePlay}
-          style={{
-            position: "absolute",
-            top: "10px",
-            left: "30px",
-            zIndex: 1000,
-            padding:5,
-          }}>
-          <FaMusic /> PLAY 
-        </button>
-      )}
+      <button onClick={togglePlayPause} className="nes-btn is-primary" >
+        {isPlaying ? (
+          <>
+            <FaPause /> PAUSE
+          </>
+        ) : (
+          <>
+            <FaMusic /> PLAY
+          </>
+        )}
+      </button>
     </div>
   );
 };
