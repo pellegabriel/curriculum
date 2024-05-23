@@ -1,7 +1,13 @@
 import React from "react";
 import "./about.css";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/contact");
+  };
   return (
     <section id="about">
       <h5>Get To Know</h5>
@@ -16,14 +22,13 @@ const About = () => {
             <br />
             I would like to create pages mixing several disciplines, which I am
             perfecting day by day.
-            <br />
-            I am more than willing to learn and create new projects, if
+            <br />I am more than willing to learn and create new projects, if
             you are interested and I can be of use to you in some work/task,
             contact me in the contact section, and I will gladly answer you.
           </p>
-          <a href="#contact" className="nes-btn is-primary">
+          <button onClick={handleNavigate} className="nes-btn is-primary">
             Let's Talk
-          </a>
+          </button>
         </div>
       </div>
     </section>
