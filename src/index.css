@@ -16,7 +16,7 @@
   height: 100%;
   overflow: hidden;
   overflow-y: auto; /* Permite el desplazamiento vertical */
-  background-color: #dbdeff;
+  background-color: #000000;
 }
 
 .box {
@@ -61,21 +61,27 @@ h3,
 h4,
 h5 {
   font-weight: 500;
+    color:aliceblue
+
 }
 
 h1 {
   font-size: 5;
+  color:aliceblue
 }
 
 section {
   margin-top: 4rem;
   padding: 4rem;
+  color:aliceblue
+
 }
 
 section > h2,
 section > h5 {
   text-align: center;
-  color: var(--color-light);
+  color:aliceblue
+
 }
 
 section > h2 {
@@ -84,7 +90,8 @@ section > h2 {
 }
 
 .text-light {
-  color: var(--color-light);
+  color:aliceblue
+
 }
 
 a {

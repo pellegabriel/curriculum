@@ -5,17 +5,16 @@
 }
 
 .portfolio__item {
-  background: #a6a6ff;
   padding: 20px;
   line-height: 1.6;
-      border: 4px solid transparent;
+      border: 4px solid ;
     transition: var(--transition);
 
 }
 
 .portfolio__item:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
+  border-color: #4d6eff;
+  color: #bbdaec;
 }
 
 .label {
