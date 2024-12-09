@@ -7,11 +7,11 @@ const Footer = () => {
   return (
     <section className="footer">
       <ul className="permalinks">
-      
+{/*       
         <li>
               <BackgroundMusic />
 
-        </li>
+        </li> */}
 
         <li>
           <Link to="/" className="nes-btn is-secondary">
