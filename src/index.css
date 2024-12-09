@@ -27,7 +27,7 @@
 :root {
   --color-bg: #03010f;
   --color-bg-variant: #686bcb;
-  --color-primary: #4d6eff;
+  --color-primary: #000000;
   --color-primary-variant: rgb(255, 255, 255);
   --color-white: rgb(0, 0, 0);
   --color-light: rgba(0, 0, 0, 0.6);
